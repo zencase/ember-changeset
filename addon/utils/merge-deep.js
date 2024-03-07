@@ -113,7 +113,7 @@ function mergeTargetAndSource(target, source, options) {
 
     // else safe key on object
     if (propertyIsOnObject(target, key) && isMergeableObject(source[key]) && !isChange(source[key])) {
-      options.safeSet(target, key, mergeDeep(options.safeGet(target, key), options.safeGet(source, key), options));
+      options.safeSet(target, key, mergeDeep(options.safeGet(target, key).content || options.safeGet(target, key), options.safeGet(source, key), options));
     } else {
       let next = source[key];
       if (isChange(next)) {
