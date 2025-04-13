@@ -38,7 +38,7 @@
   "bugs": "https://github.com/poteto/ember-changeset/issues",
   "homepage": "https://github.com/poteto/ember-changeset",
   "dependencies": {
-    "@embroider/macros": "^1.0.0",
+    "@embroider/macros": "^1.16.12",
     "@glimmer/tracking": "^1.0.4",
     "ember-auto-import": "^2.3.0",
     "ember-cli-babel": "^7.26.6",
